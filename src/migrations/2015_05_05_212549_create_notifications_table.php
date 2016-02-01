@@ -21,7 +21,7 @@ class CreateNotificationsTable extends Migration
             $table->string('to_type')->index()->nullable();
             $table->integer('category_id')->index()->unsigned();
             $table->string('url');
-            $table->string('extra')->nullable();
+            $table->text('extra')->nullable();
             $table->tinyInteger('read')->default(0);
             $table->timestamps();
 
